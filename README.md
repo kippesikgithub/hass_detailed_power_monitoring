@@ -1,4 +1,4 @@
-# hass_detailed_power_monitoring
+# Detailed Power monitoring in HA
 Create detailed Power monitoring in HA
 
 ## Detailed Power Monitoring
