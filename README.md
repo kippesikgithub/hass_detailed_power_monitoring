@@ -12,6 +12,7 @@ Sankey Chart Power Monitoring combined with Energy Dashboard
 
 ## Needed Parts
 - Power Monitors
+- Powercalc integration for calculating Power usage lights
 
 ### Blitzwolf SHP13
 - Zigbee (z2m compatible)
