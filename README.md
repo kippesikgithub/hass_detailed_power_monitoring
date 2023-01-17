@@ -37,6 +37,7 @@ Sankey Chart Power Monitoring combined with Energy Dashboard
 - Can be used in/behind the wall socket
 - Can be used in 3d printed housing
 
+## Lights can be measured with the Powercalc integration.
 ## Home Assistant
 ### create Room groups for the measuring devices (Watt and kWh)
 ###
