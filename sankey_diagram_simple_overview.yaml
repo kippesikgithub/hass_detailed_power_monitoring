@@ -1,0 +1,100 @@
+type: custom:vertical-stack-in-card
+mode: vertical
+cards:
+  - type: energy-date-selection
+  - type: custom:sankey-chart
+    height: 400
+    unit_prefix: k
+    round: 1
+    min_box_height: 20
+    min_box_distance: 5
+    show_states: true
+    show_units: true
+    show_names: true
+    show_icons: true
+    energy_date_selection: true
+    wide: true
+    sections:
+      - entities:
+          - entity_id: sensor.envoy_122217065650_lifetime_energy_production
+            type: entity
+            color: orange
+            icon: mdi:solar-power-variant
+            name: Zon
+            children:
+              - total
+          - entity_id: sensor.power_import_p1_daily
+            name: Eneco
+            type: entity
+            color: purple
+            icon: mdi:transmission-tower
+            children:
+              - total
+      - entities:
+          - entity_id: total
+            type: remaining_parent_state
+            name: ' '
+            icon: mdi:home-import-outline
+            color: navy
+            children:
+              - sensor.meterkast_daily_total_energy_kwh
+              - sensor.woonkamer_daily_total_energy_kwh
+              - sensor.keuken_daily_total_energy_kwh
+              - sensor.zolder_daily_total_energy_kwh
+              - sensor.sophie_daily_total_energy_kwh
+              - sensor.kinderkamer_lucas_daily_energy_kwh1
+              - sensor.garage_daily_total_energy_kwh
+              - sensor.lampen_daily_total_energy_kwh
+              - sensor.power_export_p1_daily
+              - Overig
+      - entities:
+          - entity_id: sensor.meterkast_daily_total_energy_kwh
+            type: entity
+            name: Meterkast
+            icon: mdi:meter-electric-outline
+            color: olive
+          - entity_id: sensor.woonkamer_daily_total_energy_kwh
+            type: entity
+            name: Woonkamer
+            icon: mdi:sofa-single
+            color: teal
+          - entity_id: sensor.keuken_daily_total_energy_kwh
+            type: entity
+            name: Keuken
+            icon: mdi:countertop-outline
+            color: blue
+          - entity_id: sensor.sophie_daily_total_energy_kwh
+            type: entity
+            name: Sophie
+            icon: mdi:account-child
+            color: magenta
+          - entity_id: sensor.kinderkamer_lucas_daily_energy_kwh1
+            type: entity
+            name: Lucas
+            icon: mdi:baby
+            color: blue
+          - entity_id: sensor.zolder_daily_total_energy_kwh
+            type: entity
+            name: Zolder
+            icon: mdi:home-roof
+            color: indigo
+          - entity_id: sensor.garage_daily_total_energy_kwh
+            type: entity
+            name: Garage
+            icon: mdi:garage
+            color: sienna
+          - entity_id: sensor.lampen_daily_total_energy_kwh
+            type: entity
+            name: Lampen
+            icon: mdi:floor-lamp
+            color: goldenrod
+          - entity_id: sensor.power_export_p1_daily
+            name: Teruglevering
+            type: entity
+            icon: mdi:transmission-tower
+            color: green
+          - entity_id: Overig
+            type: remaining_parent_state
+            name: Overig
+            icon: mdi:help
+            color: red
