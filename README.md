@@ -3,11 +3,11 @@ Create detailed Power monitoring in HA
 
 ## Detailed Power Monitoring
 
-Sankey Chart Live Power Monitoring
-![image](https://user-images.githubusercontent.com/100353268/212080557-2451f3be-3050-4c8a-968c-46a6e8788576.png)
+Sankey diagram simple overview
+![image](https://github.com/kippesikgithub/hass_detailed_power_monitoring/assets/100353268/c80061ea-6392-4408-a57a-6872167159ad)
 
-Sankey Chart Power Monitoring combined with Energy Dashboard
-![image](https://user-images.githubusercontent.com/100353268/212080647-847d93ce-d461-4936-936c-18de1d73c009.png)
+Sankey diagram detailed overview
+![image](https://github.com/kippesikgithub/hass_detailed_power_monitoring/assets/100353268/24246949-30ea-4902-80b8-5377cdbbc73b)
 
 
 ## Needed Parts
